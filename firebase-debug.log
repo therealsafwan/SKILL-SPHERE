@@ -1,0 +1,550 @@
+[debug] [2025-03-25T10:06:09.623Z] ----------------------------------------------------------------------
+[debug] [2025-03-25T10:06:09.630Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\shash\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-03-25T10:06:09.631Z] CLI Version:   13.35.1
+[debug] [2025-03-25T10:06:09.631Z] Platform:      win32
+[debug] [2025-03-25T10:06:09.631Z] Node Version:  v21.4.0
+[debug] [2025-03-25T10:06:09.632Z] Time:          Tue Mar 25 2025 15:36:09 GMT+0530 (India Standard Time)
+[debug] [2025-03-25T10:06:09.632Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-25T10:06:09.640Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-25T10:06:09.641Z] > authorizing via signed-in user (shashwathkukunoor@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\fy_project\SkillSphere-main\SkillSphere-main
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-03-25T10:06:24.948Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:06:24.948Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:06:24.950Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-03-25T10:06:25.746Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-03-25T10:06:25.747Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project skill-sphere-cat (Skill-Sphere-CAT) 
+[info] 
+=== Dataconnect Setup
+[debug] [2025-03-25T10:06:27.890Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:06:27.891Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:06:27.891Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/skill-sphere-cat/billingInfo [none]
+[debug] [2025-03-25T10:06:28.329Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/skill-sphere-cat/billingInfo 200
+[debug] [2025-03-25T10:06:28.329Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/skill-sphere-cat/billingInfo {"name":"projects/skill-sphere-cat/billingInfo","projectId":"skill-sphere-cat","billingAccountName":"","billingEnabled":false}
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2025-03-25T10:06:28.330Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:06:28.330Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:06:28.330Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/sqladmin.googleapis.com [none]
+[debug] [2025-03-25T10:06:28.330Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/sqladmin.googleapis.com x-goog-quota-user=projects/skill-sphere-cat
+[debug] [2025-03-25T10:06:29.995Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/sqladmin.googleapis.com 200
+[debug] [2025-03-25T10:06:29.995Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/sqladmin.googleapis.com [omitted]
+[info] +  dataconnect: required API sqladmin.googleapis.com is enabled 
+[info] i  dataconnect\dataconnect.yaml is unchanged 
+[info] i  dataconnect\schema\schema.gql is unchanged 
+[info] +  Wrote dataconnect\connector\connector.yaml 
+[info] i  dataconnect\connector\queries.gql is unchanged 
+[info] i  dataconnect\connector\mutations.gql is unchanged 
+[info] +  Detected WEB app in directory D:\fy_project\SkillSphere-main\SkillSphere-main 
+[info] i  Detected react app. Enabling react generated SDKs. 
+[info] i  Wrote new config to D:\fy_project\SkillSphere-main\SkillSphere-main\dataconnect\connector/connector.yaml 
+[debug] [2025-03-25T10:06:35.815Z] defaultcredentials: writing to file C:\Users\shash\AppData\Roaming\firebase\shashwathkukunoor_gmail_com_application_default_credentials.json
+[debug] [2025-03-25T10:06:35.817Z] Setting GAC to C:\Users\shash\AppData\Roaming\firebase\shashwathkukunoor_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"dataconnect"},"message":"Setting GAC to C:\\Users\\shash\\AppData\\Roaming\\firebase\\shashwathkukunoor_gmail_com_application_default_credentials.json"}}
+[info] I0325 15:36:35.884112   23084 codegen.go:82] [connector "default" javascriptSdk] Generating sources into "D:\\fy_project\\SkillSphere-main\\SkillSphere-main\\dataconnect-generated\\js\\default-connector"
+I0325 15:36:35.891050   23084 generate.go:40] Generated all sources. Writing them to disk...
+I0325 15:36:35.895319   23084 collector.go:107] connector "default" javascriptSdk wrote into "D:\\fy_project\\SkillSphere-main\\SkillSphere-main\\dataconnect-generated\\js\\default-connector"
+Generated sources: react\index.d.ts [228B] react\package.json [468B] angular\package.json [661B] angular\index.cjs.js [1B] index.d.ts [246B] react\README.md [5443B] angular\esm\package.json [17B] angular\esm\index.esm.js [0B] esm\index.esm.js [119B] README.md [2800B] react\esm\package.json [17B] react\esm\index.esm.js [0B] angular\index.d.ts [0B] esm\package.json [17B] index.cjs.js [155B] package.json [1145B] react\index.cjs.js [0B] 
+I0325 15:36:35.903774   23084 installsdk.go:76] Running command: C:\Program Files\nodejs\npm.cmd install file:dataconnect-generated\js\default-connector
+
+[info] i  Generated SDK code for default 
+[info] i  Visit https://firebase.google.com/docs/data-connect/web-sdk#react for more information on how to set up React Generated SDKs for Firebase Data Connect 
+[info] i  Run `npm i --save @angular/fire @tanstack-query-firebase/angular @tanstack/angular-query-experimental` to install angular sdk dependencies.
+Visit https://github.com/invertase/tanstack-query-firebase/tree/main/packages/angular for more information on how to set up Angular Generated SDKs for Firebase Data Connect 
+[info] +  If you'd like to add more generated SDKs to your app your later, run firebase init dataconnect:sdk again 
+[info] i  If you'd like to provision a CloudSQL Postgres instance on the Firebase Data Connect no-cost trial:
+1. Please upgrade to the pay-as-you-go (Blaze) billing plan. Visit the following page:
+     https://console.firebase.google.com/project/skill-sphere-cat/usage/details
+2. Run firebase init dataconnect again to configure the Cloud SQL instance.
+3. Run firebase deploy --only dataconnect to deploy your Data Connect service. 
+[info] 
+=== Firestore Setup
+[debug] [2025-03-25T10:06:38.514Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:06:38.514Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:06:38.514Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/firestore.googleapis.com [none]
+[debug] [2025-03-25T10:06:38.514Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/firestore.googleapis.com x-goog-quota-user=projects/skill-sphere-cat
+[debug] [2025-03-25T10:06:40.203Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/firestore.googleapis.com 200
+[debug] [2025-03-25T10:06:40.203Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/firestore.googleapis.com [omitted]
+[debug] [2025-03-25T10:06:40.203Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:06:40.203Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:06:40.203Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/skill-sphere-cat/databases/(default) [none]
+[debug] [2025-03-25T10:06:41.958Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/skill-sphere-cat/databases/(default) 200
+[debug] [2025-03-25T10:06:41.958Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/skill-sphere-cat/databases/(default) {"name":"projects/skill-sphere-cat/databases/(default)","uid":"1ba3397e-eb79-45d6-b6f7-e2b20edd65c4","createTime":"2025-03-25T10:06:07.751869Z","updateTime":"2025-03-25T10:06:07.751869Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2025-03-25T10:06:07.751869Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","databaseEdition":"STANDARD","freeTier":true,"etag":"IPWVg5f+pIwDML21wfT9pIwD"}
+[debug] [2025-03-25T10:06:41.959Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-03-25T10:06:41.959Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-03-25T10:06:41.959Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-25T10:06:41.959Z] > authorizing via signed-in user (shashwathkukunoor@gmail.com)
+[debug] [2025-03-25T10:06:41.959Z] [iam] checking project skill-sphere-cat for permissions ["firebase.projects.get"]
+[debug] [2025-03-25T10:06:41.959Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:06:41.959Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:06:41.960Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/skill-sphere-cat:testIamPermissions [none]
+[debug] [2025-03-25T10:06:41.960Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/skill-sphere-cat:testIamPermissions x-goog-quota-user=projects/skill-sphere-cat
+[debug] [2025-03-25T10:06:41.960Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/skill-sphere-cat:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-03-25T10:06:43.386Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/skill-sphere-cat:testIamPermissions 200
+[debug] [2025-03-25T10:06:43.386Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/skill-sphere-cat:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-03-25T10:07:04.609Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:07:04.609Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:07:04.609Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/skill-sphere-cat/releases pageSize=10&pageToken=
+[debug] [2025-03-25T10:07:06.261Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/skill-sphere-cat/releases 200
+[debug] [2025-03-25T10:07:06.262Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/skill-sphere-cat/releases {"releases":[{"name":"projects/skill-sphere-cat/releases/cloud.firestore","rulesetName":"projects/skill-sphere-cat/rulesets/93b490d5-6945-4a3e-9bfe-109a0397c3de","createTime":"2025-03-25T10:06:13.763286Z","updateTime":"2025-03-25T10:06:36.896921Z"}]}
+[debug] [2025-03-25T10:07:06.262Z] Found ruleset: projects/skill-sphere-cat/rulesets/93b490d5-6945-4a3e-9bfe-109a0397c3de
+[debug] [2025-03-25T10:07:06.262Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:07:06.262Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:07:06.262Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/skill-sphere-cat/rulesets/93b490d5-6945-4a3e-9bfe-109a0397c3de [none]
+[debug] [2025-03-25T10:07:07.658Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/skill-sphere-cat/rulesets/93b490d5-6945-4a3e-9bfe-109a0397c3de 200
+[debug] [2025-03-25T10:07:07.658Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/skill-sphere-cat/rulesets/93b490d5-6945-4a3e-9bfe-109a0397c3de [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-03-25T10:07:10.394Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:07:10.394Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:07:10.394Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:07:10.394Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:07:10.394Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/skill-sphere-cat/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2025-03-25T10:07:10.396Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/skill-sphere-cat/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2025-03-25T10:07:12.106Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/skill-sphere-cat/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2025-03-25T10:07:12.107Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/skill-sphere-cat/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2025-03-25T10:07:12.382Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/skill-sphere-cat/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2025-03-25T10:07:12.383Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/skill-sphere-cat/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/skill-sphere-cat/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Genkit Setup
+[debug] [2025-03-25T10:07:27.039Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-25T10:07:27.039Z] > authorizing via signed-in user (shashwathkukunoor@gmail.com)
+[debug] [2025-03-25T10:07:27.039Z] [iam] checking project skill-sphere-cat for permissions ["firebase.projects.get"]
+[debug] [2025-03-25T10:07:27.039Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:07:27.039Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:07:27.040Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/skill-sphere-cat:testIamPermissions [none]
+[debug] [2025-03-25T10:07:27.040Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/skill-sphere-cat:testIamPermissions x-goog-quota-user=projects/skill-sphere-cat
+[debug] [2025-03-25T10:07:27.040Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/skill-sphere-cat:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-03-25T10:07:28.361Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/skill-sphere-cat:testIamPermissions 200
+[debug] [2025-03-25T10:07:28.361Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/skill-sphere-cat:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-03-25T10:07:28.361Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:07:28.361Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:07:28.361Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:07:28.361Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:07:28.361Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-03-25T10:07:28.361Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/skill-sphere-cat
+[debug] [2025-03-25T10:07:28.363Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-03-25T10:07:28.363Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/skill-sphere-cat
+[debug] [2025-03-25T10:07:30.018Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/runtimeconfig.googleapis.com 200
+[debug] [2025-03-25T10:07:30.018Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-03-25T10:07:30.024Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/cloudfunctions.googleapis.com 200
+[debug] [2025-03-25T10:07:30.024Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2025-03-25T10:07:30.024Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:07:30.024Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:07:30.024Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2025-03-25T10:07:30.024Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/skill-sphere-cat
+[debug] [2025-03-25T10:07:30.612Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2025-03-25T10:07:30.612Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2025-03-25T10:07:40.626Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:07:40.626Z] Checked if tokens are valid: true, expires at: 1742898686762
+[debug] [2025-03-25T10:07:40.626Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-03-25T10:07:40.626Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/skill-sphere-cat
+[debug] [2025-03-25T10:07:42.316Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/cloudfunctions.googleapis.com 200
+[debug] [2025-03-25T10:07:42.316Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] +  Wrote functions/package.json 
+[info] +  Wrote functions/.eslintrc.js 
+[info] +  Wrote functions/tsconfig.json 
+[info] +  Wrote functions/tsconfig.dev.json 
+[info] +  Wrote functions/src/index.ts 
+[info] +  Wrote functions/.gitignore 
+[info] 
+[info] i  genkit: Installing Genkit CLI version 1.3.0
+ 
+[info] i  genkit: Installing NPM packages for genkit 
+[info] +  genkit: Successfully installed NPM packages 
+[info] i  genkit: Updating tsconfig.json 
+[info] +  genkit: Successfully updated tsconfig.json 
+[info] i  genkit: Updating package.json 
+[info] +  genkit: Successfully updated package.json 
+[info] i  genkit: Generating sample file 
+[info] +  genkit: Successfully generated sample file (src/genkit-sample.ts) 
+[info] 
+Login to Google Cloud using:
+[info]     gcloud auth application-default login --project undefined
+
+[info] Then start the Genkit developer experience by running:
+[info]     cd functions && npm run genkit:start
+[info] 
+=== Functions Setup
+[debug] [2025-03-25T10:18:57.670Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-25T10:18:57.673Z] > authorizing via signed-in user (shashwathkukunoor@gmail.com)
+[debug] [2025-03-25T10:18:57.673Z] [iam] checking project skill-sphere-cat for permissions ["firebase.projects.get"]
+[debug] [2025-03-25T10:18:57.678Z] Checked if tokens are valid: false, expires at: 1742898686762
+[debug] [2025-03-25T10:18:57.678Z] Checked if tokens are valid: false, expires at: 1742898686762
+[debug] [2025-03-25T10:18:57.683Z] > refreshing access token with scopes: []
+[debug] [2025-03-25T10:18:57.691Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-03-25T10:18:57.691Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-25T10:18:58.156Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-03-25T10:18:58.156Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-25T10:18:58.168Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/skill-sphere-cat:testIamPermissions [none]
+[debug] [2025-03-25T10:18:58.169Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/skill-sphere-cat:testIamPermissions x-goog-quota-user=projects/skill-sphere-cat
+[debug] [2025-03-25T10:18:58.169Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/skill-sphere-cat:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-03-25T10:18:59.928Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/skill-sphere-cat:testIamPermissions 200
+[debug] [2025-03-25T10:18:59.928Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/skill-sphere-cat:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-03-25T10:18:59.929Z] Checked if tokens are valid: true, expires at: 1742901537156
+[debug] [2025-03-25T10:18:59.929Z] Checked if tokens are valid: true, expires at: 1742901537156
+[debug] [2025-03-25T10:18:59.929Z] Checked if tokens are valid: true, expires at: 1742901537156
+[debug] [2025-03-25T10:18:59.929Z] Checked if tokens are valid: true, expires at: 1742901537156
+[debug] [2025-03-25T10:18:59.929Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-03-25T10:18:59.929Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/skill-sphere-cat
+[debug] [2025-03-25T10:18:59.931Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-03-25T10:18:59.931Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/skill-sphere-cat
+[debug] [2025-03-25T10:19:02.067Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/runtimeconfig.googleapis.com 200
+[debug] [2025-03-25T10:19:02.067Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-03-25T10:19:02.073Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/cloudfunctions.googleapis.com 200
+[debug] [2025-03-25T10:19:02.073Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/skill-sphere-cat/services/cloudfunctions.googleapis.com [omitted]
+[info] 
+Detected existing codebase(s): default
+
+[info] 
+Overwriting codebase default...
+
+[info] +  Wrote functions/package.json 
+[info] i  functions/.eslintrc.js is unchanged 
+[info] +  Wrote functions/tsconfig.json 
+[info] i  functions/tsconfig.dev.json is unchanged 
+[info] i  functions/src/index.ts is unchanged 
+[info] i  functions/.gitignore is unchanged 
+[info] 
+=== Apphosting Setup
+[debug] [2025-03-25T10:28:23.680Z] Checked if tokens are valid: true, expires at: 1742901537156
+[debug] [2025-03-25T10:28:23.681Z] Checked if tokens are valid: true, expires at: 1742901537156
+[debug] [2025-03-25T10:28:23.683Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/skill-sphere-cat/billingInfo [none]
+[debug] [2025-03-25T10:28:25.423Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/skill-sphere-cat/billingInfo 200
+[debug] [2025-03-25T10:28:25.423Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/skill-sphere-cat/billingInfo {"name":"projects/skill-sphere-cat/billingInfo","projectId":"skill-sphere-cat","billingAccountName":"","billingEnabled":false}
+[info] i  Writing default settings to apphosting.yaml... 
+[info] +  Wrote apphosting.yaml 
+[info] +  Create a new App Hosting backend with `firebase apphosting:backends:create` 
+[info] 
+=== Hosting Setup
+[debug] [2025-03-25T10:28:25.446Z] Checked if tokens are valid: true, expires at: 1742901537156
+[debug] [2025-03-25T10:28:25.446Z] Checked if tokens are valid: true, expires at: 1742901537156
+[debug] [2025-03-25T10:28:25.447Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/skill-sphere-cat [none]
+[debug] [2025-03-25T10:28:25.979Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/skill-sphere-cat 200
+[debug] [2025-03-25T10:28:25.979Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/skill-sphere-cat {"projectId":"skill-sphere-cat","projectNumber":"323209113902","displayName":"Skill-Sphere-CAT","name":"projects/skill-sphere-cat","resources":{"hostingSite":"skill-sphere-cat"},"state":"ACTIVE","etag":"1_549b1e83-5720-43f1-b499-4e9a9b7fef0f"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2025-03-25T10:28:37.099Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2025-03-25T10:28:37.319Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2025-03-25T10:28:37.319Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.5.0","browserURL":"https://www.gstatic.com/firebasejs/11.5.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.5.0/firebase.tgz"},"live":{"version":"11.5","browserURL":"https://www.gstatic.com/firebasejs/live/11.5/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.5/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/11.5.0/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.5.0/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.5.0/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.5.0/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.5.0/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.5.0/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.5.0/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.5.0/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.5.0/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.5.0/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.5.0/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.5.0/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.5.0/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.5.0/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.5.0/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.5.0/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.5.0/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.5.0/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.5.0/firebase-firestore.memory.js"}}
+[info] +  Wrote public/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming D:\fy_project\SkillSphere-main\SkillSphere-main is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=387228093&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2025-03-25T10:28:57.349Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2025-03-25T10:28:57.349Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2025-03-25T10:28:58.150Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2025-03-25T10:28:58.150Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2025-03-25T10:28:58.166Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2025-03-25T10:28:58.661Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2025-03-25T10:28:58.662Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Shashwath-K","id":79392783,"node_id":"MDQ6VXNlcjc5MzkyNzgz","avatar_url":"https://avatars.githubusercontent.com/u/79392783?v=4","gravatar_id":"","url":"https://api.github.com/users/Shashwath-K","html_url":"https://github.com/Shashwath-K","followers_url":"https://api.github.com/users/Shashwath-K/followers","following_url":"https://api.github.com/users/Shashwath-K/following{/other_user}","gists_url":"https://api.github.com/users/Shashwath-K/gists{/gist_id}","starred_url":"https://api.github.com/users/Shashwath-K/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Shashwath-K/subscriptions","organizations_url":"https://api.github.com/users/Shashwath-K/orgs","repos_url":"https://api.github.com/users/Shashwath-K/repos","events_url":"https://api.github.com/users/Shashwath-K/events{/privacy}","received_events_url":"https://api.github.com/users/Shashwath-K/received_events","type":"User","user_view_type":"private","site_admin":false,"name":"Shashwath K S","company":"AAT","blog":"","location":"Karnataka, India","email":null,"hireable":null,"bio":"Enthusiastic  Computer Science student with a solid\r\nfoundation in back-end and front-end development, excited to\r\ntransform complex ideas into practice.","twitter_username":null,"notification_email":null,"public_repos":13,"public_gists":0,"followers":1,"following":1,"created_at":"2021-02-21T05:41:21Z","updated_at":"2025-03-23T11:04:03Z","private_gists":0,"total_private_repos":6,"owned_private_repos":6,"disk_usage":51681,"collaborators":0,"two_factor_authentication":true,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as Shashwath-K 
+[info] 
+[debug] [2025-03-25T10:29:08.162Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2025-03-25T10:29:08.568Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2025-03-25T10:29:08.569Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2025-03-25T10:29:32.146Z] >>> [apiv2][query] GET https://api.github.com/repos/SkillSphere/actions/secrets/public-key type=owner
+[debug] [2025-03-25T10:29:32.571Z] <<< [apiv2][status] GET https://api.github.com/repos/SkillSphere/actions/secrets/public-key 404
+[debug] [2025-03-25T10:29:32.571Z] <<< [apiv2][body] GET https://api.github.com/repos/SkillSphere/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2025-03-25T10:30:52.922Z] >>> [apiv2][query] GET https://api.github.com/repos/Shashwath-K/SkillSphere/actions/secrets/public-key type=owner
+[debug] [2025-03-25T10:30:53.356Z] <<< [apiv2][status] GET https://api.github.com/repos/Shashwath-K/SkillSphere/actions/secrets/public-key 200
+[debug] [2025-03-25T10:30:53.357Z] <<< [apiv2][body] GET https://api.github.com/repos/Shashwath-K/SkillSphere/actions/secrets/public-key {"key_id":"3380204578043523366","key":"GJoL2jIhtoc3Ctkjp+NQfBECd0nJNN4OomOpL61rE1U="}
+[debug] [2025-03-25T10:30:53.359Z] >>> [apiv2][query] GET https://api.github.com/repos/Shashwath-K/SkillSphere [none]
+[debug] [2025-03-25T10:30:53.721Z] <<< [apiv2][status] GET https://api.github.com/repos/Shashwath-K/SkillSphere 200
+[debug] [2025-03-25T10:30:53.722Z] <<< [apiv2][body] GET https://api.github.com/repos/Shashwath-K/SkillSphere {"id":954600600,"node_id":"R_kgDOOOYMmA","name":"SkillSphere","full_name":"Shashwath-K/SkillSphere","private":false,"owner":{"login":"Shashwath-K","id":79392783,"node_id":"MDQ6VXNlcjc5MzkyNzgz","avatar_url":"https://avatars.githubusercontent.com/u/79392783?v=4","gravatar_id":"","url":"https://api.github.com/users/Shashwath-K","html_url":"https://github.com/Shashwath-K","followers_url":"https://api.github.com/users/Shashwath-K/followers","following_url":"https://api.github.com/users/Shashwath-K/following{/other_user}","gists_url":"https://api.github.com/users/Shashwath-K/gists{/gist_id}","starred_url":"https://api.github.com/users/Shashwath-K/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Shashwath-K/subscriptions","organizations_url":"https://api.github.com/users/Shashwath-K/orgs","repos_url":"https://api.github.com/users/Shashwath-K/repos","events_url":"https://api.github.com/users/Shashwath-K/events{/privacy}","received_events_url":"https://api.github.com/users/Shashwath-K/received_events","type":"User","user_view_type":"public","site_admin":false},"html_url":"https://github.com/Shashwath-K/SkillSphere","description":null,"fork":false,"url":"https://api.github.com/repos/Shashwath-K/SkillSphere","forks_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/forks","keys_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/keys{/key_id}","collaborators_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/teams","hooks_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/hooks","issue_events_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/issues/events{/number}","events_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/events","assignees_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/assignees{/user}","branches_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/branches{/branch}","tags_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/tags","blobs_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/git/refs{/sha}","trees_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/git/trees{/sha}","statuses_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/statuses/{sha}","languages_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/languages","stargazers_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/stargazers","contributors_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/contributors","subscribers_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/subscribers","subscription_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/subscription","commits_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/commits{/sha}","git_commits_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/git/commits{/sha}","comments_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/comments{/number}","issue_comment_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/issues/comments{/number}","contents_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/contents/{+path}","compare_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/compare/{base}...{head}","merges_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/merges","archive_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/downloads","issues_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/issues{/number}","pulls_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/pulls{/number}","milestones_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/milestones{/number}","notifications_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/labels{/name}","releases_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/releases{/id}","deployments_url":"https://api.github.com/repos/Shashwath-K/SkillSphere/deployments","created_at":"2025-03-25T10:30:57Z","updated_at":"2025-03-25T10:30:57Z","pushed_at":"2025-03-25T10:30:57Z","git_url":"git://github.com/Shashwath-K/SkillSphere.git","ssh_url":"git@github.com:Shashwath-K/SkillSphere.git","clone_url":"https://github.com/Shashwath-K/SkillSphere.git","svn_url":"https://github.com/Shashwath-K/SkillSphere","homepage":null,"size":0,"stargazers_count":0,"watchers_count":0,"language":null,"has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"has_discussions":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"allow_forking":true,"is_template":false,"web_commit_signoff_required":false,"topics":[],"visibility":"public","forks":0,"open_issues":0,"watchers":0,"default_branch":"main","permissions":{"admin":true,"maintain":true,"push":true,"triage":true,"pull":true},"temp_clone_token":"","allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"allow_auto_merge":false,"delete_branch_on_merge":false,"allow_update_branch":false,"use_squash_pr_title_as_default":false,"squash_merge_commit_message":"COMMIT_MESSAGES","squash_merge_commit_title":"COMMIT_OR_PR_TITLE","merge_commit_message":"PR_TITLE","merge_commit_title":"MERGE_MESSAGE","security_and_analysis":{"secret_scanning":{"status":"enabled"},"secret_scanning_push_protection":{"status":"enabled"},"dependabot_security_updates":{"status":"disabled"},"secret_scanning_non_provider_patterns":{"status":"disabled"},"secret_scanning_validity_checks":{"status":"disabled"}},"network_count":0,"subscribers_count":1}
+[debug] [2025-03-25T10:30:53.733Z] Checked if tokens are valid: true, expires at: 1742901537156
+[debug] [2025-03-25T10:30:53.733Z] Checked if tokens are valid: true, expires at: 1742901537156
+[debug] [2025-03-25T10:30:53.734Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/skill-sphere-cat/serviceAccounts [none]
+[debug] [2025-03-25T10:30:53.734Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/skill-sphere-cat/serviceAccounts {"accountId":"github-action-954600600","serviceAccount":{"displayName":"GitHub Actions (Shashwath-K/SkillSphere)","description":"A service account with permission to deploy to Firebase Hosting and Cloud Functions for the GitHub repository Shashwath-K/SkillSphere"}}
+[debug] [2025-03-25T10:30:56.201Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/skill-sphere-cat/serviceAccounts 200
+[debug] [2025-03-25T10:30:56.202Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/skill-sphere-cat/serviceAccounts [omitted]
+[debug] [2025-03-25T10:30:56.204Z] Checked if tokens are valid: true, expires at: 1742901537156
+[debug] [2025-03-25T10:30:56.204Z] Checked if tokens are valid: true, expires at: 1742901537156
+[debug] [2025-03-25T10:30:56.205Z] Checked if tokens are valid: true, expires at: 1742901537156
+[debug] [2025-03-25T10:30:56.205Z] Checked if tokens are valid: true, expires at: 1742901537156
+[debug] [2025-03-25T10:30:56.205Z] >>> [apiv2][query] GET https://iam.googleapis.com/v1/projects/skill-sphere-cat/serviceAccounts/github-action-954600600@skill-sphere-cat.iam.gserviceaccount.com [none]
+[debug] [2025-03-25T10:30:56.206Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/skill-sphere-cat:getIamPolicy [none]
+[debug] [2025-03-25T10:30:56.630Z] <<< [apiv2][status] GET https://iam.googleapis.com/v1/projects/skill-sphere-cat/serviceAccounts/github-action-954600600@skill-sphere-cat.iam.gserviceaccount.com 200
+[debug] [2025-03-25T10:30:56.630Z] <<< [apiv2][body] GET https://iam.googleapis.com/v1/projects/skill-sphere-cat/serviceAccounts/github-action-954600600@skill-sphere-cat.iam.gserviceaccount.com {"name":"projects/skill-sphere-cat/serviceAccounts/github-action-954600600@skill-sphere-cat.iam.gserviceaccount.com","projectId":"skill-sphere-cat","uniqueId":"117291533101062586881","email":"github-action-954600600@skill-sphere-cat.iam.gserviceaccount.com","displayName":"GitHub Actions (Shashwath-K/SkillSphere)","etag":"MDEwMjE5MjA=","description":"A service account with permission to deploy to Firebase Hosting and Cloud Functions for the GitHub repository Shashwath-K/SkillSphere","oauth2ClientId":"117291533101062586881"}
+[debug] [2025-03-25T10:30:58.099Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/skill-sphere-cat:getIamPolicy 200
+[debug] [2025-03-25T10:30:58.099Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/skill-sphere-cat:getIamPolicy {"version":1,"etag":"BwYxJ+XkiBw=","bindings":[{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-323209113902@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:skill-sphere-cat@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-323209113902@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@skill-sphere-cat.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-323209113902@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/firestore.serviceAgent","members":["serviceAccount:service-323209113902@gcp-sa-firestore.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@skill-sphere-cat.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:shashwathkukunoor@gmail.com"]}]}
+[debug] [2025-03-25T10:30:58.102Z] Checked if tokens are valid: true, expires at: 1742901537156
+[debug] [2025-03-25T10:30:58.102Z] Checked if tokens are valid: true, expires at: 1742901537156
+[debug] [2025-03-25T10:30:58.102Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/skill-sphere-cat:setIamPolicy [none]
+[debug] [2025-03-25T10:30:58.102Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/skill-sphere-cat:setIamPolicy {"policy":{"version":1,"etag":"BwYxJ+XkiBw=","bindings":[{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-323209113902@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:skill-sphere-cat@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-323209113902@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@skill-sphere-cat.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-323209113902@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/firestore.serviceAgent","members":["serviceAccount:service-323209113902@gcp-sa-firestore.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@skill-sphere-cat.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:shashwathkukunoor@gmail.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:github-action-954600600@skill-sphere-cat.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.serviceUsageConsumer","members":["serviceAccount:github-action-954600600@skill-sphere-cat.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-954600600@skill-sphere-cat.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-954600600@skill-sphere-cat.iam.gserviceaccount.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-954600600@skill-sphere-cat.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.developer","members":["serviceAccount:github-action-954600600@skill-sphere-cat.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2025-03-25T10:30:59.204Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/skill-sphere-cat:setIamPolicy 200
+[debug] [2025-03-25T10:30:59.204Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/skill-sphere-cat:setIamPolicy {"version":1,"etag":"BwYxKDm7irw=","bindings":[{"role":"roles/cloudfunctions.developer","members":["serviceAccount:github-action-954600600@skill-sphere-cat.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.serviceAgent","members":["serviceAccount:service-323209113902@gcf-admin-robot.iam.gserviceaccount.com"]},{"role":"roles/editor","members":["serviceAccount:skill-sphere-cat@appspot.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:service-323209113902@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-fbsvc@skill-sphere-cat.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:github-action-954600600@skill-sphere-cat.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-954600600@skill-sphere-cat.iam.gserviceaccount.com"]},{"role":"roles/firebaserules.system","members":["serviceAccount:service-323209113902@firebase-rules.iam.gserviceaccount.com"]},{"role":"roles/firestore.serviceAgent","members":["serviceAccount:service-323209113902@gcp-sa-firestore.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-fbsvc@skill-sphere-cat.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:shashwathkukunoor@gmail.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-954600600@skill-sphere-cat.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-954600600@skill-sphere-cat.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.serviceUsageConsumer","members":["serviceAccount:github-action-954600600@skill-sphere-cat.iam.gserviceaccount.com"]}]}
+[debug] [2025-03-25T10:30:59.211Z] Checked if tokens are valid: true, expires at: 1742901537156
+[debug] [2025-03-25T10:30:59.211Z] Checked if tokens are valid: true, expires at: 1742901537156
+[debug] [2025-03-25T10:30:59.211Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/skill-sphere-cat/serviceAccounts/github-action-954600600@skill-sphere-cat.iam.gserviceaccount.com/keys [none]
+[debug] [2025-03-25T10:30:59.211Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/skill-sphere-cat/serviceAccounts/github-action-954600600@skill-sphere-cat.iam.gserviceaccount.com/keys {"keyAlgorithm":"KEY_ALG_UNSPECIFIED","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE"}
+[debug] [2025-03-25T10:30:59.833Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/skill-sphere-cat/serviceAccounts/github-action-954600600@skill-sphere-cat.iam.gserviceaccount.com/keys 200
+[debug] [2025-03-25T10:30:59.833Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/skill-sphere-cat/serviceAccounts/github-action-954600600@skill-sphere-cat.iam.gserviceaccount.com/keys {"name":"projects/skill-sphere-cat/serviceAccounts/github-action-954600600@skill-sphere-cat.iam.gserviceaccount.com/keys/d004214a19cfe871d5018192621bd6ad11b61ea7","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE","privateKeyData":"ewogICJ0eXBlIjogInNlcnZpY2VfYWNjb3VudCIsCiAgInByb2plY3RfaWQiOiAic2tpbGwtc3BoZXJlLWNhdCIsCiAgInByaXZhdGVfa2V5X2lkIjogImQwMDQyMTRhMTljZmU4NzFkNTAxODE5MjYyMWJkNmFkMTFiNjFlYTciLAogICJwcml2YXRlX2tleSI6ICItLS0tLUJFR0lOIFBSSVZBVEUgS0VZLS0tLS1cbk1JSUV2Z0lCQURBTkJna3Foa2lHOXcwQkFRRUZBQVNDQktnd2dnU2tBZ0VBQW9JQkFRQzlMTDUxNFJhL2FtVnVcbkRPbU9EQVVvd3NpWDgrQkUrRFBBc3N1QUFIVWY3a2FnbWcwYkdRc1NRUzIxNHBPMDZQV25PMmpiNzJhaWlRVUpcbm9LZlUySWp5cmFlM2JGWEx3amo3Uktzc0ZXWDVNamx2T1hRUEg2QnVIVWIrSGRTMFhPRjNoaWtiQ2QwSDJQdDlcbm9wQ0owMTBsOU1BZktLV0dDVGR0dDBxTjFldUZPSEVxOTkxRzZuRXlEVkdGMEQrRUNGTlBCYTQvMERjU3JubElcbnZhL0tFSXU4UmVweDQxUlhCdjlHbHhWVUNETTRCTjFueStjL1hXcmVSQVhwZEJ0YnpmMFMzYmY2NTlIT2FuVDhcbjFhNUlCUCtLT00zSkczd29vS3lFdExJYnRiMHBGaGJYTmVsMnpNaWZmZ01DQjdqQzhsbGdrWm41VzBQdzVRckdcbmFpNm1lKzNqQWdNQkFBRUNnZ0VBUElHT3E0SmlkYmZRbUZudDY3NkJlZStQSERibkVQZzRDVmJHaXZyYWUydUpcblVIM2xXamp3MXhaY3lmT2QzYnV6TXBsb2FRd1J6a080QmtQSjJtU2xyTVVKUXp3VjF2V1lweGxvREZJTnl4NGFcbnk2M2JKcWt0ZFhyTXhhT0I4R3hTdXhtQWxVTGEzTk0wWVJNNVdyUHRjNkhzUHlzUGdpYjVnUkNpZW1vbENmY2RcbkdGNUJMSmIvT0FyUzdwM2J0UEh1NTIzaEt2ZStRbXltTzNLRDJwcXJPcmNUdXMySjA1S2FpQy9OdFhsdE4wamRcbmg5OFp3MUw4ZGVWSkxjcG9icjJTbnpmVVJ3RS9yYU12bTdlMytFZTA5aVMvZGprSTVtNGx2L0NNQWxLbm5URURcbmtocFlBTFRBbzF1eUU5MGp6cHpjVm8zMk9OdFRGZC9Wc21Cd3VZMUNjUUtCZ1FENm1BQ0VyMTBudkg4VFJKSCtcbitqdG5SSmpBQlE3QmRQZUlIc2xselhOcWJFZ3ovRldkbDdVVmhJd1U3WlJNaEhrSjV3WDVoOE9JVXRHTlpFWlpcbnljSFhzd2xpNnFmamhOMEZDMDJyK0V5YU1vbHkvanZuTndaUnRxTE5aYWJzODAraVhZRGxybDh6b0NXUnpaS3ZcbnBWWlpXRnVGZUh6ZnJLd1YwNzRtbXZmdlVRS0JnUURCUVloYTRrR0R1ZTlaRmxYNHZjSW04ZTlzZ3kzWWljcGFcblBIRUhEWDNma25BQjdJaTkzQ2ZJbHlRa25UT01uRTNhci9scW1EeEZGRjVpeEtkdnNaR2NJUElyR2lLKzlTNTZcbnI1Vjd6Nlhkc2krVkZiaFBVWkl4dm9hQW9tbFYrcjRsbzlMKy9xL0x4Vkw5YlJ3cEZmcjY3Wm9UWHF3UUtwQnhcblhTcWc5bDZFOHdLQmdERHZpZnBmUEhQTURZeTNzVUwzbnE0VjZUWm1SbkZrNUFuQzZWVmwvNG5peDE3UGdmQ2FcbmRaUlVJLzdhUGtHTEJRLzMrMlMxTEd2c3NGdEtINnJkQ1d1VDNOdGlNNUxzbVRTbzltd0V1d0RKcWFtNUYvMllcbjh6VDEwMmtFMXNvaTRZUTFlanhnQnR0UUJNWXFQT0RzQ3FhNzZITnlDZ0NyK1pieG1JcDFiTUZoQW9HQkFMaEdcbkg1bmhvbXpUcitsM3hkUmdSTEJVQTJPcUZkNGpUVU1MM1E3SGk1M1NpV0VjUlNzY3NRYXhMN0tGL3pCMW5qc0hcbmowRllGaWdjaXYrTTJzZERQei9ybmw4QkZkNlY5WkxndUI0TjJ1L3hSelBXT1IvUS9TRFh0bk1UNm5Na200bFNcbmxBKzNsTE10M2J0dS9lb2pYbVZFaUtVdG9jM3NlRHpRaEtSbEo2MkhBb0dCQU1sN3EyOW1ueldzYWRCbTQxQmNcbjRYVTM2KzVZd1Z0SjlzbUNnS2hBbFo0K0lLd21qL2F0V09mTDRDMG1uN0NDc0pjSFRGaFRGZ0FCUjBOcTNVTlRcblI0SXVNQnVnSnljVjVBME45UHljUklKdWQ3UVpsUkFlY2dQcGVmRGdReU5TYzZjVk5VUnE3Vzg4cnhaWEFOS1BcbmdwemtjeUJGWVI0MDBLcVBVTngyaDdOTVxuLS0tLS1FTkQgUFJJVkFURSBLRVktLS0tLVxuIiwKICAiY2xpZW50X2VtYWlsIjogImdpdGh1Yi1hY3Rpb24tOTU0NjAwNjAwQHNraWxsLXNwaGVyZS1jYXQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJjbGllbnRfaWQiOiAiMTE3MjkxNTMzMTAxMDYyNTg2ODgxIiwKICAiYXV0aF91cmkiOiAiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL2F1dGgiLAogICJ0b2tlbl91cmkiOiAiaHR0cHM6Ly9vYXV0aDIuZ29vZ2xlYXBpcy5jb20vdG9rZW4iLAogICJhdXRoX3Byb3ZpZGVyX3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vb2F1dGgyL3YxL2NlcnRzIiwKICAiY2xpZW50X3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vcm9ib3QvdjEvbWV0YWRhdGEveDUwOS9naXRodWItYWN0aW9uLTk1NDYwMDYwMCU0MHNraWxsLXNwaGVyZS1jYXQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJ1bml2ZXJzZV9kb21haW4iOiAiZ29vZ2xlYXBpcy5jb20iCn0K","validAfterTime":"2025-03-25T10:31:37Z","validBeforeTime":"9999-12-31T23:59:59Z","keyAlgorithm":"KEY_ALG_RSA_2048","keyOrigin":"GOOGLE_PROVIDED","keyType":"USER_MANAGED"}
+[info] 
+[info] +  Created service account github-action-954600600 with Firebase Hosting admin permissions. 
+[debug] [2025-03-25T10:30:59.857Z] >>> [apiv2][query] PUT https://api.github.com/repos/Shashwath-K/SkillSphere/actions/secrets/FIREBASE_SERVICE_ACCOUNT_SKILL_SPHERE_CAT [none]
+[debug] [2025-03-25T10:30:59.857Z] >>> [apiv2][body] PUT https://api.github.com/repos/Shashwath-K/SkillSphere/actions/secrets/FIREBASE_SERVICE_ACCOUNT_SKILL_SPHERE_CAT {"encrypted_value":"2XGZbIsJACFYnzd0sq/vy7Y1yIYIgNK/4tfXaJBzYmpuJp9XGqOsa4ndbWEXeUbMZAlGKTVKOZopoGK3Uy3omzA3iGVsxrlSx+pdArENpAvVMcPth+ob3FF6Q/UnHh9JTCduGTaWCvZhlM3N+Ampi1V5h1JIb/akxZSrmnEp13g4A8snBB4QEnZYW67Z4CUAMNZa5vlJy5/4MpcEMY4ufQHKPEuFJaL9o35yvZjK26toEa/MN0I6WsW+Zqnr0Mm2PfBY8X8DzB9kw91dcHsE6YqFbwnkLmR9lV/2PwisBJSwYraE6QeeAfjPrx3YxYiOFXv5kRueuBiwSAQvilST1UNWUnx14Ye6YdDfflTDBYA4j+9kqRjQIWxPUxpjozPDRsQl3QOYs66Go9A/G1mhTz7VcUi2JUtEI03lfS6qUFnHtIPqw2MQOsJU470Uy4yU/IC0Bvo4Z9p7+vmLZt7ZhelT+wiH1qahvbykVU1aukJ04zJFd45FMoafWw31AlLXebdzSmtGspYQ0OIMKsXSRuCrhmC/1gIiI3k2TzCs0XYgHHI0gxfen5kzRAIrP7TKBi8uUPDVXoeH50eINFaJJjgA/CWosNuRQtDHZo+ASyoLnqLIVBtu4tArHhi09HhmRy68L9Nb42X8zi9k7Y1oDwXPDwrs03+aSmf0fQ7ViUs4b+felffzn1I4pEBfENSs3FrWZagbZXD0MjG2wDjHI9XgXs7jLSUrd0P44jmNacv8ZYqV+jToacAigSw5YUF6D4bzhPo5MjJY0fcFhBVzsOP1qnTp8bW+Wd9dHfZL+kDL8hwClMaPlSMFXgjoCAzaVA/byZtgB+FigIp3QvQJBqLuG3ER5OAYWUbpCZAhofHXa8fM3AxwfdLddXy36OnS0DmiJmHy2TP6DDAidXBO+GEFPn9MAcsesKRPjr+ic3o5ll3BcXQO4wbl/iel6MaWtVXdCiIqRpMGxH5pViE0KrUGMY2gRMW24rjoTrFJqCTdyVN4VWruiHtQe1iciEZzxfjVRSg1+AJoTwZKQy6hx4lNUCIJeTQPZFKULSe0dEvRBLlDg/YWbx8neFH2B6eO6paHCVqXVZ4X5HLyzEuA8d+OaSoUo/YPNebvCiHnLeNCev3/CWOvDJIB/bShWMnnIlzgsMFtfqxyedMHzyAxbcOxeNiKGJjDufPcvHQRnZabntZMg7dqrN/7O97JmZDGyPcA/03fyLVEG6WbFT9vgxscLdvvD9APpU2AknYK4xq7NQawfKk5z/FObMNp0fWukO6jmxZS3N8aLhyDM79wqzdBVwj44RJi6FcZsxO1OlKw8i2+ujok4qsJkQemjMmIBOH02p7vo9wYjSauczGLqhQbquIPxwdBRWDRgW1h1a7kzjpZ4YrU1VSF5mg/4BdkHNyZWlWb2XE/VIC/A2XkcDa68Jc3HXNyvONhrDMDuVWEIZoAqQdgthL53F8Hi3Y1CJou0FUMy89WnTEL6oMeyKkwQNjrbEygebQ+9YkzgodFBzEsupf2cVKNs7JmcLxF7JUtGxO+EMHerDMXqr0OXgNRmmZOVcGl/44sRtl3D5outOIA6sUji90FjMcTN8IOzXXjDcVL0aa+G1PE7oTMrQQ1rKRN+JyvtUg2ixgOLp+vKiQU/xe6B+3WOfjuh9oMGttd9emBbIc+eXlKdZAuvtkzpIhbpqH2YjxYFtMZaNAhE6B5JbFsdN755sW6R5W3kaPCxWy/ab27kDY6kGHYyjSTT/rZA8FI9JAWNhDIx18MDE7XJhIDhgQ+qD8C3m9s09jbBPipmWCQ5KVNzzAXh2qMR/sfLgHSX5iZdJCHnRIGuHLkEqn2lGEn6TkH6vWERtJSPUwEsiajUqe5aFecPjjnLRCktzWoRvy+aAkp2v+exuG6erewJRkMiWEsktUlRTorVDopyN+VSnYTQ34ARRCOxeCzskNWoll5RGyB5JUTlfqW7n3pE0zU4wGfGn72b/SNyjVvejcBa1Dd5OhTGwUFQ5xqV8Bw7H4iHg03I90trqsi/HfFXe5EsMzMHGoy5/EvaKeRbQLcndn3btmjFhA7zNIqwBCymJQX0735hZ1TI+vXfyknFHvGPqFWR2G7CjEa/RoawwnhT+y8cWTxgwK4HoYN7er1hYGdjFw+hunUl5mOY0WT4MPhvUFg60LVfPR0KP6AoG37QDj2aHfohf2MrEScQU8K9eXF97R4+mnuW9iVxdTAKWBaOEdlt/fc2YHHea4CxSLuMuCKqIlxOUZsBExzodOk+KMFW4fELUl+QT6WOF9fRm5Hz8anSq0zRrDU73UM85KYyAtjrB4z4IYkQaTBrvar/jr868AOXrsZoqpy395m4rn0y7xx77znZ06rW5r75krgwcgM/KGkmNGkmxCMsfr0681p0gAHCsbzXKuJa21ObATj1FBNAiLJ+8Xdp5m1LlYdlXQaAKyKQmZKdtcJ/8hnHOxund36tzMu6Ss7aVZC53FqvVA4uMAV6+G4w4DssFYrrw+Mf51NnZuFs05xvJOVPQ4kiB1NZZsiNZe+9ZLj1SiSjlIEW7fwGn8XV1YPHfYx8GTPr/ah/ZK89DZ2x5nqwc0nSVeytXQsCtvYgMuL/8EERW4Q7UZw018i2OShQw/efpii4w0HjsSIZTQlurOQx7tXYODkV/d0wbaiam0T/mB945g/X+IzH/PFfl/j3lC0UnEsMZJhHuuMalYGoo72hgNRgZGzo/2TqCQ1ObP3oRSOmLLC/e5npbDqVk/H3yW2WTCAUYIP3lrz1OFfcM5nk/7fR4/7XD4CBeP6QOpo3GxBo/AKBKrFM0DFWoUOuZ9rN/Pk937X897AOVThPSP89HkcQqAAfeW59PYezs5YvvEH9aY7J6xI4UmKwaXzqSMgdXaV8ugq289wCByN+R6m4NqF24xDAHMdvsD1O0uhDQwnXc/I8tkfTpmfn6ump4qU0x5cvRim3xPwgz10PqOq2EF5VBNfwFZYWDjyuCpulpSiTFlL/Y5jq6qys+IJtOD6RjTNxNta2MbT8rp9nSl//gu7bhn2koi+tAtGHeqAZYULbDs66Jr5CtLOVa4CgfC11mzSumFE7II9feBeycR/FgwnRLXLkIOKEXTSw0lszmu3+hlefFjvXr+1PMaq/Q5kBI+hhTbCCsFoIj7W4yuMQ/ScCXKJs0rZHC0Ljlrq+W2pUT5zUCDZfvft6WkOUHb1kqwCnWHvxYbj2+zToWtPLlh3iZuIOOMpG+jB","key_id":"3380204578043523366"}
+[debug] [2025-03-25T10:31:00.703Z] <<< [apiv2][status] PUT https://api.github.com/repos/Shashwath-K/SkillSphere/actions/secrets/FIREBASE_SERVICE_ACCOUNT_SKILL_SPHERE_CAT 201
+[debug] [2025-03-25T10:31:00.703Z] <<< [apiv2][body] PUT https://api.github.com/repos/Shashwath-K/SkillSphere/actions/secrets/FIREBASE_SERVICE_ACCOUNT_SKILL_SPHERE_CAT {}
+[info] +  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_SKILL_SPHERE_CAT. 
+[info] i  You can manage your secrets at https://github.com/Shashwath-K/SkillSphere/settings/secrets. 
+[info] 
+[info] 
+[info] +  Created workflow file D:\fy_project\SkillSphere-main\SkillSphere-main\.github/workflows/firebase-hosting-pull-request.yml 
+[info] 
+[info] +  Created workflow file D:\fy_project\SkillSphere-main\SkillSphere-main\.github/workflows/firebase-hosting-merge.yml 
+[info] 
+[info] i  Action required: Visit this URL to revoke authorization for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] i  Action required: Push any new workflow file(s) to your repo 
+[info] 
+=== Storage Setup
+[info] 
+[info] Firebase Storage Security Rules allow you to define how and when to allow
+[info] uploads and downloads. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[info] +  Wrote storage.rules 
+[info] 
+=== Emulators Setup
+[info] i  apphosting: Initializing Emulator {"metadata":{"emulator":{"name":"apphosting"},"message":"Initializing Emulator"}}
+[debug] [2025-03-25T10:32:02.538Z] Checked if tokens are valid: true, expires at: 1742901537156
+[debug] [2025-03-25T10:32:02.538Z] Checked if tokens are valid: true, expires at: 1742901537156
+[debug] [2025-03-25T10:32:02.538Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-03-25T10:32:03.330Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-03-25T10:32:03.331Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] Wrote secrets as environment variables to apphosting.local.yaml.
+[info] apphosting.local.yaml has been automatically added to your .gitignore.
+[info] i  firestore: downloading cloud-firestore-emulator-v1.19.8.jar... {"metadata":{"emulator":{"name":"firestore"},"message":"downloading cloud-firestore-emulator-v1.19.8.jar..."}}
+[debug] [2025-03-25T10:32:31.113Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.19.8.jar 
+[debug] [2025-03-25T10:32:31.811Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.19.8.jar 200
+[debug] [2025-03-25T10:32:31.811Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.19.8.jar [stream]
+[info] i  database: downloading firebase-database-emulator-v4.11.2.jar... {"metadata":{"emulator":{"name":"database"},"message":"downloading firebase-database-emulator-v4.11.2.jar..."}}
+[debug] [2025-03-25T10:32:51.737Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.11.2.jar 
+[debug] [2025-03-25T10:32:52.157Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.11.2.jar 200
+[debug] [2025-03-25T10:32:52.157Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/firebase-database-emulator-v4.11.2.jar [stream]
+[info] i  storage: downloading cloud-storage-rules-runtime-v1.1.3.jar... {"metadata":{"emulator":{"name":"storage"},"message":"downloading cloud-storage-rules-runtime-v1.1.3.jar..."}}
+[debug] [2025-03-25T10:33:03.451Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-storage-rules-runtime-v1.1.3.jar 
+[debug] [2025-03-25T10:33:03.872Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-storage-rules-runtime-v1.1.3.jar 200
+[debug] [2025-03-25T10:33:03.872Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-storage-rules-runtime-v1.1.3.jar [stream]
+[info] i  ui: downloading ui-v1.14.0.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.14.0.zip..."}}
+[debug] [2025-03-25T10:33:23.249Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.14.0.zip 
+[info] 
+=== Remoteconfig Setup
+[debug] [2025-03-25T10:33:23.338Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.14.0.zip 200
+[debug] [2025-03-25T10:33:23.339Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.14.0.zip [stream]
+[debug] [2025-03-25T10:33:24.288Z] Data is 3615311
+[debug] [2025-03-25T10:33:24.288Z] [unzip] Entry: client/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-03-25T10:33:24.289Z] [unzip] Processing entry: client\
+[debug] [2025-03-25T10:33:24.289Z] [unzip] mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\
+[debug] [2025-03-25T10:33:24.304Z] [unzip] Entry: client/favicon-16x16.png (compressed_size=293 bytes, uncompressed_size=293 bytes)
+[debug] [2025-03-25T10:33:24.304Z] [unzip] Processing entry: client\favicon-16x16.png
+[debug] [2025-03-25T10:33:24.305Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2025-03-25T10:33:24.306Z] [unzip] Writing file: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\favicon-16x16.png
+[debug] [2025-03-25T10:33:24.308Z] [unzip] Entry: client/safari-pinned-tab.svg (compressed_size=1433 bytes, uncompressed_size=2611 bytes)
+[debug] [2025-03-25T10:33:24.308Z] [unzip] Processing entry: client\safari-pinned-tab.svg
+[debug] [2025-03-25T10:33:24.308Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2025-03-25T10:33:24.311Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\safari-pinned-tab.svg
+[debug] [2025-03-25T10:33:24.317Z] [unzip] Entry: client/favicon.ico (compressed_size=2933 bytes, uncompressed_size=13294 bytes)
+[debug] [2025-03-25T10:33:24.317Z] [unzip] Processing entry: client\favicon.ico
+[debug] [2025-03-25T10:33:24.317Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2025-03-25T10:33:24.317Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\favicon.ico
+[debug] [2025-03-25T10:33:24.318Z] [unzip] Entry: client/index.html (compressed_size=1363 bytes, uncompressed_size=3071 bytes)
+[debug] [2025-03-25T10:33:24.318Z] [unzip] Processing entry: client\index.html
+[debug] [2025-03-25T10:33:24.318Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2025-03-25T10:33:24.319Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\index.html
+[debug] [2025-03-25T10:33:24.320Z] [unzip] Entry: client/android-chrome-192x192.png (compressed_size=2684 bytes, uncompressed_size=2684 bytes)
+[debug] [2025-03-25T10:33:24.320Z] [unzip] Processing entry: client\android-chrome-192x192.png
+[debug] [2025-03-25T10:33:24.320Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2025-03-25T10:33:24.320Z] [unzip] Writing file: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\android-chrome-192x192.png
+[debug] [2025-03-25T10:33:24.321Z] [unzip] Entry: client/apple-touch-icon.png (compressed_size=2123 bytes, uncompressed_size=2152 bytes)
+[debug] [2025-03-25T10:33:24.321Z] [unzip] Processing entry: client\apple-touch-icon.png
+[debug] [2025-03-25T10:33:24.321Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2025-03-25T10:33:24.321Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\apple-touch-icon.png
+[debug] [2025-03-25T10:33:24.322Z] [unzip] Entry: client/android-chrome-512x512.png (compressed_size=5369 bytes, uncompressed_size=5411 bytes)
+[debug] [2025-03-25T10:33:24.322Z] [unzip] Processing entry: client\android-chrome-512x512.png
+[debug] [2025-03-25T10:33:24.322Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2025-03-25T10:33:24.323Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\android-chrome-512x512.png
+[debug] [2025-03-25T10:33:24.323Z] [unzip] Entry: client/manifest.json (compressed_size=245 bytes, uncompressed_size=551 bytes)
+[debug] [2025-03-25T10:33:24.323Z] [unzip] Processing entry: client\manifest.json
+[debug] [2025-03-25T10:33:24.323Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2025-03-25T10:33:24.324Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\manifest.json
+[debug] [2025-03-25T10:33:24.324Z] [unzip] Entry: client/robots.txt (compressed_size=26 bytes, uncompressed_size=26 bytes)
+[debug] [2025-03-25T10:33:24.325Z] [unzip] Processing entry: client\robots.txt
+[debug] [2025-03-25T10:33:24.325Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2025-03-25T10:33:24.325Z] [unzip] Writing file: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\robots.txt
+[debug] [2025-03-25T10:33:24.325Z] [unzip] Entry: client/mstile-150x150.png (compressed_size=2034 bytes, uncompressed_size=2034 bytes)
+[debug] [2025-03-25T10:33:24.325Z] [unzip] Processing entry: client\mstile-150x150.png
+[debug] [2025-03-25T10:33:24.325Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2025-03-25T10:33:24.326Z] [unzip] Writing file: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\mstile-150x150.png
+[debug] [2025-03-25T10:33:24.326Z] [unzip] Entry: client/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-03-25T10:33:24.326Z] [unzip] Processing entry: client\assets\
+[debug] [2025-03-25T10:33:24.326Z] [unzip] mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\
+[debug] [2025-03-25T10:33:24.327Z] [unzip] Entry: client/assets/index-ClZTY_JS.js.map (compressed_size=2328270 bytes, uncompressed_size=9947004 bytes)
+[debug] [2025-03-25T10:33:24.327Z] [unzip] Processing entry: client\assets\index-ClZTY_JS.js.map
+[debug] [2025-03-25T10:33:24.327Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets
+[debug] [2025-03-25T10:33:24.327Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\index-ClZTY_JS.js.map
+[debug] [2025-03-25T10:33:24.367Z] [unzip] Entry: client/assets/index-ClZTY_JS.js (compressed_size=567195 bytes, uncompressed_size=2035940 bytes)
+[debug] [2025-03-25T10:33:24.367Z] [unzip] Processing entry: client\assets\index-ClZTY_JS.js
+[debug] [2025-03-25T10:33:24.367Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets
+[debug] [2025-03-25T10:33:24.368Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\index-ClZTY_JS.js
+[debug] [2025-03-25T10:33:24.377Z] [unzip] Entry: client/assets/index-BdgySamB.css (compressed_size=35979 bytes, uncompressed_size=298654 bytes)
+[debug] [2025-03-25T10:33:24.377Z] [unzip] Processing entry: client\assets\index-BdgySamB.css
+[debug] [2025-03-25T10:33:24.377Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets
+[debug] [2025-03-25T10:33:24.377Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\index-BdgySamB.css
+[debug] [2025-03-25T10:33:24.379Z] [unzip] Entry: client/assets/extensions/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-03-25T10:33:24.379Z] [unzip] Processing entry: client\assets\extensions\
+[debug] [2025-03-25T10:33:24.379Z] [unzip] mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\extensions\
+[debug] [2025-03-25T10:33:24.379Z] [unzip] Entry: client/assets/extensions/default-extension.png (compressed_size=1646 bytes, uncompressed_size=1657 bytes)
+[debug] [2025-03-25T10:33:24.379Z] [unzip] Processing entry: client\assets\extensions\default-extension.png
+[debug] [2025-03-25T10:33:24.380Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\extensions
+[debug] [2025-03-25T10:33:24.380Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\extensions\default-extension.png
+[debug] [2025-03-25T10:33:24.381Z] [unzip] Entry: client/assets/img/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-03-25T10:33:24.381Z] [unzip] Processing entry: client\assets\img\
+[debug] [2025-03-25T10:33:24.381Z] [unzip] mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\img\
+[debug] [2025-03-25T10:33:24.381Z] [unzip] Entry: client/assets/img/database.png (compressed_size=29449 bytes, uncompressed_size=29988 bytes)
+[debug] [2025-03-25T10:33:24.381Z] [unzip] Processing entry: client\assets\img\database.png
+[debug] [2025-03-25T10:33:24.381Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\img
+[debug] [2025-03-25T10:33:24.382Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\img\database.png
+[debug] [2025-03-25T10:33:24.383Z] [unzip] Entry: client/assets/provider-icons/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-03-25T10:33:24.383Z] [unzip] Processing entry: client\assets\provider-icons\
+[debug] [2025-03-25T10:33:24.383Z] [unzip] mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\
+[debug] [2025-03-25T10:33:24.383Z] [unzip] Entry: client/assets/provider-icons/auth_service_saml.svg (compressed_size=575 bytes, uncompressed_size=1226 bytes)
+[debug] [2025-03-25T10:33:24.383Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_saml.svg
+[debug] [2025-03-25T10:33:24.383Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-03-25T10:33:24.383Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_saml.svg
+[debug] [2025-03-25T10:33:24.384Z] [unzip] Entry: client/assets/provider-icons/auth_service_phone.svg (compressed_size=261 bytes, uncompressed_size=414 bytes)
+[debug] [2025-03-25T10:33:24.384Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_phone.svg
+[debug] [2025-03-25T10:33:24.384Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-03-25T10:33:24.385Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_phone.svg
+[debug] [2025-03-25T10:33:24.385Z] [unzip] Entry: client/assets/provider-icons/auth_service_facebook.svg (compressed_size=289 bytes, uncompressed_size=457 bytes)
+[debug] [2025-03-25T10:33:24.385Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2025-03-25T10:33:24.385Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-03-25T10:33:24.386Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_facebook.svg
+[debug] [2025-03-25T10:33:24.387Z] [unzip] Entry: client/assets/provider-icons/auth_service_game_center.svg (compressed_size=991 bytes, uncompressed_size=3921 bytes)
+[debug] [2025-03-25T10:33:24.387Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2025-03-25T10:33:24.387Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-03-25T10:33:24.388Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_game_center.svg
+[debug] [2025-03-25T10:33:24.388Z] [unzip] Entry: client/assets/provider-icons/auth_service_apple.svg (compressed_size=230 bytes, uncompressed_size=334 bytes)
+[debug] [2025-03-25T10:33:24.388Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_apple.svg
+[debug] [2025-03-25T10:33:24.388Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-03-25T10:33:24.389Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_apple.svg
+[debug] [2025-03-25T10:33:24.389Z] [unzip] Entry: client/assets/provider-icons/auth_service_github.svg (compressed_size=466 bytes, uncompressed_size=838 bytes)
+[debug] [2025-03-25T10:33:24.389Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_github.svg
+[debug] [2025-03-25T10:33:24.389Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-03-25T10:33:24.390Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_github.svg
+[debug] [2025-03-25T10:33:24.390Z] [unzip] Entry: client/assets/provider-icons/auth_service_mslive.svg (compressed_size=203 bytes, uncompressed_size=378 bytes)
+[debug] [2025-03-25T10:33:24.390Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2025-03-25T10:33:24.390Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-03-25T10:33:24.390Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_mslive.svg
+[debug] [2025-03-25T10:33:24.391Z] [unzip] Entry: client/assets/provider-icons/auth_service_yahoo.svg (compressed_size=577 bytes, uncompressed_size=1182 bytes)
+[debug] [2025-03-25T10:33:24.391Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2025-03-25T10:33:24.391Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-03-25T10:33:24.391Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_yahoo.svg
+[debug] [2025-03-25T10:33:24.392Z] [unzip] Entry: client/assets/provider-icons/auth_service_twitter.svg (compressed_size=444 bytes, uncompressed_size=751 bytes)
+[debug] [2025-03-25T10:33:24.392Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2025-03-25T10:33:24.392Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-03-25T10:33:24.393Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_twitter.svg
+[debug] [2025-03-25T10:33:24.393Z] [unzip] Entry: client/assets/provider-icons/auth_service_play_games.svg (compressed_size=565 bytes, uncompressed_size=1173 bytes)
+[debug] [2025-03-25T10:33:24.394Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2025-03-25T10:33:24.394Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-03-25T10:33:24.394Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_play_games.svg
+[debug] [2025-03-25T10:33:24.394Z] [unzip] Entry: client/assets/provider-icons/auth_service_email.svg (compressed_size=228 bytes, uncompressed_size=326 bytes)
+[debug] [2025-03-25T10:33:24.394Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_email.svg
+[debug] [2025-03-25T10:33:24.395Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-03-25T10:33:24.395Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_email.svg
+[debug] [2025-03-25T10:33:24.395Z] [unzip] Entry: client/assets/provider-icons/auth_service_google.svg (compressed_size=409 bytes, uncompressed_size=720 bytes)
+[debug] [2025-03-25T10:33:24.395Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_google.svg
+[debug] [2025-03-25T10:33:24.396Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-03-25T10:33:24.396Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_google.svg
+[debug] [2025-03-25T10:33:24.396Z] [unzip] Entry: client/assets/provider-icons/auth_service_oidc.svg (compressed_size=414 bytes, uncompressed_size=858 bytes)
+[debug] [2025-03-25T10:33:24.396Z] [unzip] Processing entry: client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2025-03-25T10:33:24.396Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons
+[debug] [2025-03-25T10:33:24.397Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\assets\provider-icons\auth_service_oidc.svg
+[debug] [2025-03-25T10:33:24.397Z] [unzip] Entry: client/browserconfig.xml (compressed_size=491 bytes, uncompressed_size=822 bytes)
+[debug] [2025-03-25T10:33:24.397Z] [unzip] Processing entry: client\browserconfig.xml
+[debug] [2025-03-25T10:33:24.397Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2025-03-25T10:33:24.398Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\browserconfig.xml
+[debug] [2025-03-25T10:33:24.398Z] [unzip] Entry: client/favicon-32x32.png (compressed_size=475 bytes, uncompressed_size=475 bytes)
+[debug] [2025-03-25T10:33:24.398Z] [unzip] Processing entry: client\favicon-32x32.png
+[debug] [2025-03-25T10:33:24.398Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client
+[debug] [2025-03-25T10:33:24.399Z] [unzip] Writing file: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\client\favicon-32x32.png
+[debug] [2025-03-25T10:33:24.399Z] [unzip] Entry: server/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-03-25T10:33:24.399Z] [unzip] Processing entry: server\
+[debug] [2025-03-25T10:33:24.399Z] [unzip] mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\server\
+[debug] [2025-03-25T10:33:24.400Z] [unzip] Entry: server/server.mjs.map (compressed_size=296496 bytes, uncompressed_size=1355667 bytes)
+[debug] [2025-03-25T10:33:24.400Z] [unzip] Processing entry: server\server.mjs.map
+[debug] [2025-03-25T10:33:24.400Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\server
+[debug] [2025-03-25T10:33:24.400Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\server\server.mjs.map
+[debug] [2025-03-25T10:33:24.405Z] [unzip] Entry: server/server.mjs (compressed_size=315701 bytes, uncompressed_size=1172682 bytes)
+[debug] [2025-03-25T10:33:24.405Z] [unzip] Processing entry: server\server.mjs
+[debug] [2025-03-25T10:33:24.405Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\server
+[debug] [2025-03-25T10:33:24.405Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\server\server.mjs
+[debug] [2025-03-25T10:33:24.410Z] [unzip] Entry: server/assets/ (compressed_size=0 bytes, uncompressed_size=0 bytes)
+[debug] [2025-03-25T10:33:24.410Z] [unzip] Processing entry: server\assets\
+[debug] [2025-03-25T10:33:24.410Z] [unzip] mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\server\assets\
+[debug] [2025-03-25T10:33:24.410Z] [unzip] Entry: server/assets/multipart-parser-DGCUZdXu.mjs.map (compressed_size=4791 bytes, uncompressed_size=17918 bytes)
+[debug] [2025-03-25T10:33:24.410Z] [unzip] Processing entry: server\assets\multipart-parser-DGCUZdXu.mjs.map
+[debug] [2025-03-25T10:33:24.410Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\server\assets
+[debug] [2025-03-25T10:33:24.411Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\server\assets\multipart-parser-DGCUZdXu.mjs.map
+[debug] [2025-03-25T10:33:24.412Z] [unzip] Entry: server/assets/multipart-parser-DGCUZdXu.mjs (compressed_size=2621 bytes, uncompressed_size=10390 bytes)
+[debug] [2025-03-25T10:33:24.412Z] [unzip] Processing entry: server\assets\multipart-parser-DGCUZdXu.mjs
+[debug] [2025-03-25T10:33:24.412Z] [unzip] else mkdir: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\server\assets
+[debug] [2025-03-25T10:33:24.412Z] [unzip] deflating: C:\Users\shash\.cache\firebase\emulators\ui-v1.14.0\server\assets\multipart-parser-DGCUZdXu.mjs
